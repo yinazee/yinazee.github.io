@@ -1,0 +1,21 @@
+# Site settings
+title: Yina's Journey
+header-img: img/home-bg.png
+email: yinagit@gmail.com
+copyright_name: yinazee
+description: > # this means to ignore newlines until "baseurl:"
+  Learn like it's 1979.
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  yinazee
+learn_profile: yinazee
+email_username: yinagit@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
