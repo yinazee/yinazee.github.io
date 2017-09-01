@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Tic Tac Toe"
-date:   2017-09-01 18:53:24 +0000
+date:   2017-09-01 14:53:25 -0400
 ---
 
 
-![](https://i.pinimg.com/236x/4f/54/29/4f5429df5ea6361fa8d3f08dfcdccdf9--programmer-humor-computer-engineering.jpg
+![https://i.pinimg.com/236x/4f/54/29/4f5429df5ea6361fa8d3f08dfcdccdf9--programmer-humor-computer-engineering.jpg]
 
 I did not come from a coding background. I had no experience in code speak.  So the fact that I could pass this lab was a guarantee that at any moment that I needed help, I got help. Finishing this lab was a community effort. 
 
