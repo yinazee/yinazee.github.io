@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Enter your title here"
-date:       2017-11-27 04:50:19 +0000
+title:      "Intro to Regex"
+date:       2017-11-26 23:50:19 -0500
 permalink:  enter_your_title_here
 ---
 
