@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "when to use = verses =="
-date:       2018-01-06 03:08:44 +0000
+date:       2018-01-05 22:08:45 -0500
 permalink:  when_to_use_verses
 ---
 
