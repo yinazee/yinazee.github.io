@@ -1,13 +1,13 @@
 ---
 layout: post
 title:      "Key Concepts for Scraping"
-date:       2018-01-04 23:57:02 +0000
+date:       2018-01-04 18:57:03 -0500
 permalink:  key_concepts_for_scraping
 ---
 
-Scraping is a mthod to extract and reorganize data from HTML.  It breaks down information and puts them together again in a redefined. API (application program interface). It is to take catered information from a variety of sources into one source.  
+Scraping is a method to extract and reorganize data from HTML.  It breaks down information and puts them together again in a redefined API (application program interface). It is taking catered information from a variety of sources into your application.
 
-Why Scraping? Scraping is a phenomenom when re-organized information can represent something new to a user.  Taking only information you need, simplifying and redefining the world into something new and more efficient.
+Why Scraping? Scraping is a phenomenom when re-organized information can represent something new to a user.  Taking only information you need, simplifying and redefining the world into something new and more efficient. 
 
 When using Scraping make sure to install gem Nokogiri by typing the following in your terminal:
 
