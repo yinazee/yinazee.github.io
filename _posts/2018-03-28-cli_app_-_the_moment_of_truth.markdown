@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI APP - The Moment of Truth"
-date:       2018-03-28 04:32:18 +0000
+date:       2018-03-28 00:32:19 -0400
 permalink:  cli_app_-_the_moment_of_truth
 ---
 
@@ -156,6 +156,7 @@ def self.scrape_yesterday
     end
     yesterdays
   end
+	
 	```
 		
 The first nokogiri scrapes the main link so that the second nokogiri can scrape the horoscope's yesterday link.
