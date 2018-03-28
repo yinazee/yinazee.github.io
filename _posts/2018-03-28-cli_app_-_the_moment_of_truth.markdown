@@ -124,7 +124,7 @@ With this variable, I was able to scrape for the 'tail' of the sublinks and just
 
 This url method will return all the sublinks and then I will pass them through nokogiri once more to pull the headlines.
 
-![The Aries Headline](https://imgur.com/a/NHo4j)
+![](https://i.imgur.com/eZqZIgU.png)
 
 So with this, instead of creating a names method, I created a headline method. I iterated the headlines with a .each_with_index to display:
 
