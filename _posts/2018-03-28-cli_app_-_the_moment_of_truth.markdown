@@ -88,7 +88,11 @@ This is the jist of my CLI walk-through:
 			-read tomorrow's horoscope
 			-exit
 			
-Then I finally stuck to my guns and chose the second approach. I chose the second approach because it is better to scrape all the sub-webpages for today using nokogiri once, rather than scraping for 1 horoscope sign by using nokogiri 4 times for (name, yesterday, today, tomorrow.)  It is also much easier for a user to input a number and that number will instantly return that indexed element in all of the name, yesterday and tomorrow's arrays. 
+Then I finally stuck to my guns and chose the second approach.
+
+I will have the scraper methods right on the CLI and not use the horoscope object at all.
+
+I chose the second approach because it is better to scrape all the sub-webpages for 'today' using nokogiri once, rather than scraping for 1 horoscope sign by using nokogiri 4 times for (name, yesterday, today, tomorrow.)  It is also much easier for a user to input a number and that number will instantly return that indexed element in all of the name, yesterday and tomorrow's arrays. 
 
 For example: If user's horoscope sign is aries, his/her input will be 1. So name's first element is Aries. Today's first element will showcase Arie's horoscope, so on so forth.
 
@@ -100,7 +104,7 @@ Ok, so while scraping, I came upon another problem.  I wanted to implement the I
 3. Gemini's Horoscope (May 21 - Jun 20)
 ```
 
-This way, there's no need for a 14th option.  I'm beginning to streamline my app, I realized.  I tried for the longest time to scrape from that pop-up. But I just couldn't figure out how. I googled, read a few scraping blogs and did some 1 on 1s. Finally, I just gave up and approach it a different way.
+This way, there's no need for a 14th option.  I'm beginning to streamline my app, I realized.  I tried for the longest time to scrape from that pop-up. But I just couldn't figure out how. I googled, read a few scraping blogs and did some 1 on 1s. Finally, I just gave up and approach it a different way. (It was a hard thing to do.)
 
 I will just have to scrape the headline.text from all 13 different links:
 
