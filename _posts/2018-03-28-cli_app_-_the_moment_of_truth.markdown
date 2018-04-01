@@ -38,6 +38,7 @@ Generally in my experience, 3 out of 5 people memorize more or less the horoscop
 			end`
 
 3. Double check if all your 'def' and 'end' align. Make sure indentation is correct and consistent.
+4. Binding.pry is your friend. [Quick Youtube Tutorial](https://www.youtube.com/watch?v=dbllOus430c)
 4. Understand the error messages. 
 
 With just these 4 steps you can have a simple CLI running already. Then it's onto the scraping part.
