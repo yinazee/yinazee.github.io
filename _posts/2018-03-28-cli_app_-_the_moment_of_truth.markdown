@@ -90,9 +90,10 @@ This is the jist of my CLI walk-through:
 			
 Then I finally stuck to my guns and chose the second approach.
 
-With the second approach, all the user has to do is input a number, and that number will output the element of whatever array it wants.  You want information from the today array? tomorrow array? yesterday array? It will be the same number element from all those arrays. Aries will always pull from element #0 from all those arrays and Gemini's are always #1s, etc.
+With the second approach, all the user has to do is input a number, and that number will output the index of whatever array it wants.  You want information from the today array? tomorrow array? yesterday array? It will be the same index from all those arrays. Aries will always pull from element #0 from all those arrays and Gemini's are always #1s, etc.
 
-I also chose the second approach because it is better to scrape all the sub-webpages for 'today' using nokogiri once, rather than scraping for 1 horoscope sign by using nokogiri 4 times for (name, yesterday, today, tomorrow.)  It is also much easier for a user to input a number and that number will instantly return that indexed element in all of the name, yesterday and tomorrow's arrays. 
+I also chose the second approach because it is better to scrape all the sub-webpages for 'today' using nokogiri once, rather than scraping for 1 horoscope sign by using nokogiri 4 times. Given the structure of the website, where every information I need are from 39 different links, this was the best approach for my app. Also, there will not be an additional horoscope to throw off the order of the elements in my array.
+
 
 For example: If user's horoscope sign is aries, his/her input will be 1. So name's first element is Aries. Today's first element will showcase Arie's horoscope, so on so forth.
 
