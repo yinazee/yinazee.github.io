@@ -43,13 +43,13 @@ Generally in my experience, 3 out of 5 people memorize more or less the horoscop
 
 With just these 4 steps you can have a simple CLI running already. Then it's onto the scraping part.
 
-I had a tough time choosing how to organize my data after I scrape. The challenge scraping from this website is that every horoscope has 3 separate links (39 separate links in total. I have to scrape from 3 different websites to gather the horoscope readings of yesterday, today and tomorrow.  So far, I'm only good at scraping all info from one website. 
+I had a tough time choosing how to organize my data after I scrape.   It goes in either 1 of 2 ways and it was the biggest decision I had to make when constructing this CLI.  Most importantly, how will your user get the data it wants by their input?  You want the interaction to be as simple as possible. 
 
-Also, I was conflicted between 2 ways of organizing my data.
+The challenge scraping from this website is that every horoscope has 3 separate links (39 separate links in total. I have to scrape from 3 different websites to gather the horoscope readings of yesterday, today and tomorrow.  
 
 Should I....
 
-Scrape data so every horoscope sign has an array of: name, yesterday, today, and tomorrow?
+**A. Scrape data so every horoscope sign has an array of: name, yesterday, today, and tomorrow?**
 
 ```
 aries = [name, yesterday_horoscope, today_horoscope, tomorrow_horoscope]
@@ -60,18 +60,18 @@ cancer =  [name, yesterday_horoscope, today_horoscope, tomorrow_horoscope]
 
 Or
 
-Scrape data so each name, yesterday, today and tomorrow have *their* own array of: aries, gemini, taurus, etc?
+**B. Scrape data so each name, yesterday, today and tomorrow have *their* own array of: aries, gemini, taurus, etc?**
 
 ```
 name = [aries, gemini, taurus, cancer...]
-yesterday = [aries, gemini, taurus, cancer...]
-today = [aries, gemini, taurus, cancer...]
-tomorrow = [aries, gemini, taurus, cancer]
+yesterday = [aries_yesterday, gemini_yesterday, taurus_yesterday, cancer_yesterday...]
+today = [aries_today, gemini_today, taurus_today, cancer_today...]
+tomorrow = [aries_tomorrow, gemini_tomorrow, taurus_tomorrow, cancer_tomorrow]
 ```
 
-I couldn't decide which so I was changing my code back and forth and it was a month long ordeal, with errors sprinkled on top of it.
+I couldn't decide which at the beginning, so I was changing my code back and forth and it was a month long ordeal, with other errors sprinkled on top of it.  
 
-So before I tell you which approach I chose, and after a lot of restructuring ...
+And this is what helped clarify how I should scrape/organize my data:
 
 This is the jist of my CLI walk-through:
 
