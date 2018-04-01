@@ -71,7 +71,7 @@ tomorrow = [aries_tomorrow, gemini_tomorrow, taurus_tomorrow, cancer_tomorrow]
 
 I couldn't decide which at the beginning, so I was changing my code back and forth and it was a month long ordeal, with other errors sprinkled on top of it.  
 
-And this is what helped clarify how I should scrape/organize my data:
+But ultimately, I have to ask myself from a user's perspective, how can I intuitively use this app? How can I use this app with minimum effort?  And this is what helped clarify how I should scrape/organize my data:
 
 This is the jist of my CLI walk-through:
 
@@ -90,9 +90,9 @@ This is the jist of my CLI walk-through:
 			
 Then I finally stuck to my guns and chose the second approach.
 
-I will have the scraper methods right on the CLI and not use the horoscope object at all.
+With the second approach, all the user has to do is input a number, and that number will output the element of whatever array it wants.  You want information from the today array? tomorrow array? yesterday array? It will be the same number element from all those arrays. Aries will always pull from element #0 from all those arrays and Gemini's are always #1s, etc.
 
-I chose the second approach because it is better to scrape all the sub-webpages for 'today' using nokogiri once, rather than scraping for 1 horoscope sign by using nokogiri 4 times for (name, yesterday, today, tomorrow.)  It is also much easier for a user to input a number and that number will instantly return that indexed element in all of the name, yesterday and tomorrow's arrays. 
+I also chose the second approach because it is better to scrape all the sub-webpages for 'today' using nokogiri once, rather than scraping for 1 horoscope sign by using nokogiri 4 times for (name, yesterday, today, tomorrow.)  It is also much easier for a user to input a number and that number will instantly return that indexed element in all of the name, yesterday and tomorrow's arrays. 
 
 For example: If user's horoscope sign is aries, his/her input will be 1. So name's first element is Aries. Today's first element will showcase Arie's horoscope, so on so forth.
 
