@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Differences Between Class and Instance Methods"
-date:       2018-04-07 20:14:56 +0000
+date:       2018-04-07 16:14:57 -0400
 permalink:  differences_between_class_and_instance_methods
 ---
 
