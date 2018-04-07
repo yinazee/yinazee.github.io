@@ -121,5 +121,5 @@ When creating objects, be aware of how these objects and data are accessed, as c
 sources:
 http://www.culttt.com/2015/06/10/understanding-class-methods-verses-instance-methods-in-ruby/
 http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/
-
+https://www.youtube.com/watch?time_continue=449&v=ab11lJJKm8M
 
