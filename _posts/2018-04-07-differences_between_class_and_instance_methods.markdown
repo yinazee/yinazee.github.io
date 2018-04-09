@@ -33,7 +33,7 @@ end
 end
 ```
 
-A class method is the call of a function onto the object Dog **itself**.  So whenever you want to invoke a **class method**, it MUST be on a **class object**.  You can simply add '.self' in front of the method name to create this function. Self refers to the object itself.
+A class method can be called on a class only.  In other words, a **category** method can be called the **category** of that object. So whenever you want to invoke a **class method**, it MUST be on a **class**.  You can simply add '.self' in front of the method name to create this function. Self refers to the object itself.
 
 ```
 
@@ -87,7 +87,7 @@ Let's create a dog and save it to a variable.
 lassie = Dog.new
 ```
 
-So the Dog class machine just churned out a new **instance** of a dog, and we set it to variable 'lassie'.  And just like class methods, only instance methods can be called on instance objects.
+So the Dog class machine just churned out a new **instance** of a dog, and we set it to variable 'lassie'.  And just like class methods, only instance methods can be called on instance of a class.
 
 So taking from what we have so far....
 
