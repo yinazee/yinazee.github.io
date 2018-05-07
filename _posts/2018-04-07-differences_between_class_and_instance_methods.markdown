@@ -12,7 +12,7 @@ Okay, so here we go.
 
 Inorder to understand the concept better, let's find a real life analogy to help explain the differences between Class and Instance Methods.
 
-# Class Method
+** Class Method**
 
 For example: 
 
@@ -46,7 +46,8 @@ Dog.bark
 ```
 
 
-# Instance Method
+**Instance Method**
+
 For example:
 
 
