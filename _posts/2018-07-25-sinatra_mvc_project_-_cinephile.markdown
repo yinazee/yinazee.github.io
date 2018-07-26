@@ -1,26 +1,40 @@
 ---
 layout: post
 title:      "Sinatra MVC Project - Cinephile"
-date:       2018-07-25 06:09:48 +0000
+date:       2018-07-25 02:09:49 -0400
 permalink:  sinatra_mvc_project_-_cinephile
 ---
 
 ![](https://i.imgur.com/rLIOHO6.png?1)
 
-I spent 3 weeks on this project while working full time, an extra 8 days than what I hope to finish this project by.  (This website is not fully done but the project requirements are fulfilled. Meaning, I am going to submit this project because I fulfilled the checklist but there are parts of it, I need to finish in order for it to be a fully functioning website.)
+**So this is how I started on the project** 
 
-I was going through the hurdles just like I did when I was working through the CLI Data Project and I had thoughts that I would not be able to go through this and looking back at it now knowing the project actually wasnt that complicated.
+I had a few ideas in my head before I started the project.  I wrote them on a post it and kept them in the back of my head.  So as I was working on the labs before it, I would take notes on what features I need from the labs, so that when I start the project, I know exactly which previous labs to go back to when I need reference.
 
-There were a few nights in the past 3 weeks I did not code at all( but all the while thinking about coding). Then towards the end when I start to see the end of the tunnel, I would power through nights, sleeping at 4am then waking at 7.
+Then I did a 1 on 1 meeting with Howard DeVinnish who leads the study group for Sinatra, ActiveRecord, SQL, and ORM.  I highly recommend it to students who do not come from a coding background.  I had a list of questions to ask him, but he took me a step back and asked me exactly what is Sinatra and Active Record? I have read about it before but I was caught off guard and could not remember, which means, I didn't fully understand the concept if I couldn't verbalize it. It pays to refresh your memory of the following key questions before you meet with Howard.  
 
-The beginning of the project was easy.  I knew exactly what I needed from watching the first ten minutes of this video:
+**What is the difference between website and web application?**
+So WAF (Web Application Frameworks) allows a website to be dynamic so that it could create, store, delete as many user accounts, blog posts, data, etc.  WAF alleviates a lot of the website's repetitive tasks by following RESTful conventions, a concept created by Roy Fielding.
 
-[https://youtu.be/kgHN11dQ3H0](http://)
+**What is Sinatra?**
+"[Sinatra ](https://learn.co/tracks/full-stack-web-development-v5/sinatra/sinatra-basics/what-is-sinatra)is a Domain Specific Language implemented in Ruby that's used for writing web applications. Created by Blake Mizerany, Sinatra is Rack-based, which means it can fit into any Rack-based application stack, including Rails. It's used by companies such as Apple, BBC, GitHub, LinkedIn, and more."  Sinatra is a great way to start to learn about the 'magic' of the web.  This is where you will have to manually write the routes that hit up your designated view files for the users to CRUD (create, read, update, delete). Users of most websites will almost always need to create an account, log in, log out, etc. and those actions, leads to routes that render a view page; a view page is where the models or category of certain information gets CRUD.
 
-That youtube video was a review in forms using pirates and ships as examples.  Highly recommended, just simply following the guildelines of checking your params as you build. I was researching for a template to clone but after a short while I figure it's fast if I just do it from scratch.  It's also good practice for memory of building your app, so you know what you need.
 
-I then spent about 3 hours drafting a picture of all my object models and the relationships between each other.  Getting it correct and understanding how you want your models to be.
+**What is MVC?**
+As we learned from SQL about databases, MVC stands for Model, Views, Controller. Write down models you need for your website and create migrations for them. I spent 3 hours (pencil highly recommended) and just draw out your models, their attributes, and then figuring out the relationships between them.  You can also do it on the computer by using [DB Browser for SQLite](https://sqlitebrowser.org/) but I prefer to do it by hand.
 
-So since I am creating a movie review object, I have to focus and put movie in the forefront of my mind.  Then I have to think about what a movie has and then subsequently modeled the other objects around the Movie class.
 
-Then I realized based on previous lessons, the login page and sign up page is 1 click away. So I created the login form right on the index.erb file. But you should be able to log in. I wanted to streamline a user's experience, and make it more intuitive.
+**Great Resource**
+I thought this [pirates nested form video]([https://youtu.be/kgHN11dQ3H0](http://)) was a really good resource to set up your portfolio project. I did not find a good sinatra template, so I manually set one up and I would recommend to others to just manually set it up. It doesn't take that long and it helps greatly with knowing how all the nooks and cranny works before the abstraction.
+
+**Fun Challenge**
+Google is your friend. I've never done a drop down select menu before. But I know the website would be better with one and so I googled on how to build one. And I wanted to get the top directors in the industry in that select menu for users to pick.  Thanks to my experience with the CLI project, my scrapping skills are top-notch. Then it comes down to cleaning up the data and then I had to alphabetize them. But then the next challenge was, how can I get the check mark to preselect the first director? Ok, create the first entry as blank.  Ok, but how do we get the checkmark to show on the director you chose, on the edit page? And this was the hardest part: getting the show page to show the newly selected director. Ok, 10 hours of coding later, done. Ok but now how do I get a newly created director to show in the list in its correct abc order and not just at the bottom? Still on it.
+
+**You: Before and After**
+I became really good at binding.pry.
+
+**Overall Thoughts**
+I was going through the hurdles just like I did when I was working through the CLI Data Project. I had negative thoughts creep in my head that I wasn't going to get this, that I'm not smart enough, and then I stop to tell myself out loud that 'You can do this. It's only a matter of time. You can do this.' followed by visions of a better work/personal life. I would stay up till 3/4am and get up a few hours later. I find myself more focused, later on in the night.
+
+I spent 3 weeks on this project while working full time; an extra 8  more than what I had planned on finishing this project. I submitted the project but there are parts of it I would love to revisit and work on.)
+
