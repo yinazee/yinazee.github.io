@@ -33,12 +33,11 @@ I've created a quick cheat sheet for when I need to create a new rails app again
 
        v.	$ git push –u origin master
 			 
-     *	Trouble shoot
-
-            i.	If you are unable to push:
-           1.	$ git pull
-           2.	$ git push (if it still doesn’t work then do git push –f)
-           3.	Add your gems, copy a gemfile from a previous project
+     *	Trouble shoot:
+     * If you are unable to push:
+     * $ git pull
+     * $ git push (if it still doesn’t work then do git push –f)
+     * Then finally copy the basic gemfile from a previous project and add your custom gems
 
 3.    Follow this [lab](https://learn.co/tracks/full-stack-web-development-v6/rails/authentication/omniauth) to complete social media login
   To use login link: <%= link_to (‘Log in with Facebook!’, ‘/auth/facebook’) %>
@@ -51,6 +50,7 @@ I've created a quick cheat sheet for when I need to create a new rails app again
 ## Sync  - Setting up your models
 #### So after setting up the basic foundation of my rails app, I set up what models I need and their relationship to each other
 
+I always set up my models on paper and draw out their relationships.  
 So I wanted to create a user model and each model will take on 2 hats or 2 other roles.  They could be a host or a guest. So everytime a new user is initiated, a host and guest instance gets created by association. Hence:
 
 
@@ -119,14 +119,17 @@ has_many guests, through: event_guests
 
 =======
 
-As I'm writing this entry, I felt like I should have combined the roles of User, Guest and Host to just User. It makes for better data management. I think for the sake of streamlining and simplifying information, less is more. For my application, I think it's acceptable to say that a User can create events and be invited to events.  This thought is still not concrete but surely after spending quite amount of time figuring out the relationships between the models and then 
+As I'm writing this entry, I felt like I should have combined the roles of User, Guest and Host to just User. It makes for better data management. I think for the sake of streamlining and simplifying information, less is more. For my application, I think it's acceptable to say that a User can create events and be invited to events.  
+
+## The Guest and EventGuest Model
+So as we are setting up the guest model, each guest id is created everytime a user is created.  This is so each event gets a list of guest_ids.  We can access it by entering @event.guests.  But if we want to invite, uninvite and find out if they rsvp'ed, we need to access @event.event_guests.  The event_guest models are unique because it is a combination of the event_id and guest_id.
 
 
 
-	 ## talk about what a user can do
-	 ## talk about what an invited guest can do
 	 ## talk about how events#index page is organized
 	 ## talk about challenges
+	 ## talk about ongoing challenges and questions
+	 -should a users be able to delete their accounts.
 			 
 Sources:
 
