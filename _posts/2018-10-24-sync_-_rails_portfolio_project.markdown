@@ -121,8 +121,15 @@ has_many guests, through: event_guests
 
 As I'm writing this entry, I felt like I should have combined the roles of User, Guest and Host to just User. It makes for better data management. I think for the sake of streamlining and simplifying information, less is more. For my application, I think it's acceptable to say that a User can create events and be invited to events.  
 
+## The User Model
+So to recap, a User takes on 2 additional roles. They have a host_id to create events with and a guest_id, so that they could be invited to an event.  The user itself could not edit their information----
+
+As I'm writing this blog entry after I 'finished' my project, I have just made the decision that a user will be unable to delete their account.  In particular to my application because a lot of the models are dependent on the User model.  If a User gets deleted, the events where that User is invited to, will crash, unless I put in a condition to prevent that.  But more importantly, the events that the User created in the past will be deleted too.  And with that, I would have to delete all the EventGuest models that have been invited to those events.  That wouldn't make sense. So I removed the User delete function.
+
 ## The Guest and EventGuest Model
 So as we are setting up the guest model, each guest id is created everytime a user is created.  This is so each event gets a list of guest_ids.  We can access it by entering @event.guests.  But if we want to invite, uninvite and find out if they rsvp'ed, we need to access @event.event_guests.  The event_guest models are unique because it is a combination of the event_id and guest_id.
+
+
 
 
 
