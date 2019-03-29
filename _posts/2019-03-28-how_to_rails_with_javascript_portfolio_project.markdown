@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How to: Rails with Javascript Portfolio Project"
-date:       2019-03-29 03:14:01 +0000
+date:       2019-03-28 23:14:02 -0400
 permalink:  how_to_rails_with_javascript_portfolio_project
 ---
 
