@@ -7,7 +7,7 @@ permalink:  how_to_rails_with_javascript_portfolio_project
 
 For this project, I incorporated javascript methods into my exisiting Rails project, titled Sync. [Here is the link to my github repo.](https://github.com/yinazee/Sync-v2). I [duplicated](https://help.github.com/en/articles/duplicating-a-repository) the repo and retitled it to Sync-v2.
 
-I printed out the [requirements ](https://docs.google.com/document/d/1__ggX6daBp_Lc6EWFEYXASR-UnskU5Hy9UnXGCez3mc/edit) and had it next to me while I was working on the project.   **So do not get stuck!**
+I printed out the [requirements ](https://docs.google.com/document/d/1__ggX6daBp_Lc6EWFEYXASR-UnskU5Hy9UnXGCez3mc/edit) and had it next to me while I was working on the project.   **So do not get stuck! Focus on the requirements, do not dwell!** 
 
 Please watch these videos before starting on the project! I wish I watched these before I began my project. These are in high definition so you can see the code, the audio is clear and the instructor Cernan Bernardo gets straight to the point and makes it super easy to follow. [This video is one hour long and starts coding from scratch.](https://www.youtube.com/watch?v=oHPM0ekV7zQ) and [This video is 15min and touches basics.](https://www.youtube.com/watch?v=Yd0nH9CWWfo&feature=youtu.be).  Also, check out [Brad Smith's video and github ](http://www.smithwebtek.com/asdf)on this project.
 
